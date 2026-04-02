@@ -1,6 +1,6 @@
 # API Reliability Monitor — SLA Report
 
-> Last updated: **2026-04-02 04:58 UTC** &nbsp;|&nbsp; APIs monitored: **12** &nbsp;|&nbsp; Healthy: **1/12** &nbsp;|&nbsp; Avg uptime: **81.7%**
+> Last updated: **2026-04-02 05:03 UTC** &nbsp;|&nbsp; APIs monitored: **12** &nbsp;|&nbsp; Healthy: **1/12** &nbsp;|&nbsp; Avg uptime: **81.7%**
 
 ## SLA summary
 
@@ -37,4 +37,4 @@ These APIs exceeded their SLA threshold on average during these hours:
 | `ipapi_check` | 02:00 | 1538.9 | 75.0% |
 
 ---
-_Generated automatically by [api-monitor](https://github.com/your-username/api-monitor) via GitHub Actions + dbt._
+_Generated automatically by [api-monitor](https://github.com/Dev-rja/api-monitor) via GitHub Actions + dbt._

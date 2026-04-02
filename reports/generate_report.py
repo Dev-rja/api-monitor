@@ -102,7 +102,7 @@ def build_report(summary: list[dict], slow_hours: list[dict]) -> str:
 
     lines.append("\n---")
     lines.append("_Generated automatically by "
-                 "[api-monitor](https://github.com/your-username/api-monitor) "
+                 "[api-monitor](https://github.com/Dev-rja/api-monitor) "
                  "via GitHub Actions + dbt._")
 
     return "\n".join(lines) + "\n"

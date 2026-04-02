@@ -2,7 +2,6 @@
 
 A fully automated data pipeline that monitors the uptime and response time of public APIs, transforms raw ping data using dbt, and publishes a live SLA report — updated every 30 minutes via GitHub Actions.
 
----
 
 ## Live SLA report
 
@@ -10,7 +9,6 @@ A fully automated data pipeline that monitors the uptime and response time of pu
 
 The report updates automatically every 30 minutes without any manual intervention.
 
----
 
 ## What it does
 

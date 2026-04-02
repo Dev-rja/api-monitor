@@ -2,8 +2,8 @@ name: Poll APIs and update report
 
 on:
   schedule:
-    - cron: '*/30 * * * *'   # every 30 minutes
-  workflow_dispatch:           # allows manual run from GitHub UI
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
   poll-and-report:
@@ -32,31 +32,20 @@ jobs:
       - name: Set up dbt profiles
         run: |
           mkdir -p ~/.dbt
-          cat > ~/.dbt/profiles.yml << 'EOF'
-          api_monitor:
-            target: dev
-            outputs:
-              dev:
-                type: sqlite
-                threads: 1
-                database: "${{ github.workspace }}/data/monitor.db"
-                schema: main
-                schemas_and_paths:
-                  main: "${{ github.workspace }}/data/monitor.db"
-                schema_directory: "${{ github.workspace }}/data"
-          EOF
+          echo "api_monitor:" > ~/.dbt/profiles.yml
+          echo "  target: dev" >> ~/.dbt/profiles.yml
+          echo "  outputs:" >> ~/.dbt/profiles.yml
+          echo "    dev:" >> ~/.dbt/profiles.yml
+          echo "      type: sqlite" >> ~/.dbt/profiles.yml
+          echo "      threads: 1" >> ~/.dbt/profiles.yml
+          echo "      database: $GITHUB_WORKSPACE/data/monitor.db" >> ~/.dbt/profiles.yml
+          echo "      schema: main" >> ~/.dbt/profiles.yml
+          echo "      schemas_and_paths:" >> ~/.dbt/profiles.yml
+          echo "        main: $GITHUB_WORKSPACE/data/monitor.db" >> ~/.dbt/profiles.yml
+          echo "      schema_directory: $GITHUB_WORKSPACE/data" >> ~/.dbt/profiles.yml
 
-      - name: Drop stg_pings view (dbt-sqlite workaround)
-        run: |
-          python - <<EOF
-          import sqlite3, os
-          db = os.path.join(os.environ['GITHUB_WORKSPACE'], 'data', 'monitor.db')
-          conn = sqlite3.connect(db)
-          conn.execute('DROP VIEW IF EXISTS stg_pings')
-          conn.commit()
-          conn.close()
-          print("Dropped stg_pings view")
-          EOF
+      - name: Drop stg_pings view
+        run: python -c "import sqlite3, os; conn = sqlite3.connect(os.path.join(os.environ['GITHUB_WORKSPACE'], 'data', 'monitor.db')); conn.execute('DROP VIEW IF EXISTS stg_pings'); conn.commit(); conn.close()"
 
       - name: Run dbt
         working-directory: dbt
@@ -69,7 +58,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/monitor.db report.md
           git diff --staged --quiet || git commit -m "chore: update SLA report $(date -u '+%Y-%m-%d %H:%M UTC')"

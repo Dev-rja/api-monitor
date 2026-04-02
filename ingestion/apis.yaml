@@ -1,0 +1,60 @@
+apis:
+  - name: jsonplaceholder_posts
+    url: https://jsonplaceholder.typicode.com/posts/1
+    expected_status: 200
+    sla_ms: 800
+
+  - name: open_meteo_weather
+    url: https://api.open-meteo.com/v1/forecast?latitude=14.59&longitude=120.98&current_weather=true
+    expected_status: 200
+    sla_ms: 1000
+
+  - name: rest_countries
+    url: https://restcountries.com/v3.1/name/philippines
+    expected_status: 200
+    sla_ms: 1200
+
+  - name: nasa_apod
+    url: https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+    expected_status: 200
+    sla_ms: 2000
+
+  - name: coingecko_bitcoin
+    url: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd
+    expected_status: 200
+    sla_ms: 1500
+
+  - name: public_apis_list
+    url: https://api.publicapis.org/entries?category=finance
+    expected_status: 200
+    sla_ms: 1500
+
+  - name: agify_name
+    url: https://api.agify.io/?name=michael
+    expected_status: 200
+    sla_ms: 600
+
+  - name: dog_ceo_random
+    url: https://dog.ceo/api/breeds/image/random
+    expected_status: 200
+    sla_ms: 1000
+
+  - name: catfact_random
+    url: https://catfact.ninja/fact
+    expected_status: 200
+    sla_ms: 800
+
+  - name: ipapi_check
+    url: https://ipapi.co/json/
+    expected_status: 200
+    sla_ms: 1200
+
+  - name: useless_fact
+    url: https://uselessfacts.jsph.pl/api/v2/facts/random
+    expected_status: 200
+    sla_ms: 1000
+
+  - name: numbers_trivia
+    url: http://numbersapi.com/42/trivia?json
+    expected_status: 200
+    sla_ms: 1000

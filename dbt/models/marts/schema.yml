@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: mart_api_sla_summary
+    description: >
+      One row per API. Aggregates all pings into uptime %, SLA compliance %,
+      response time stats, and a health_status label. Primary output for the
+      README report card and SLA reporting.
+    columns:
+      - name: api_name
+        tests:
+          - unique
+          - not_null
+      - name: uptime_pct
+        tests:
+          - not_null
+      - name: sla_compliance_pct
+        tests:
+          - not_null
+      - name: health_status
+        tests:
+          - not_null
+
+  - name: mart_hourly_trends
+    description: >
+      One row per API per hour of day (0-23). Shows whether an API is
+      consistently slow or unreliable at specific times. Useful for spotting
+      patterns like "this API always breaches SLA between 2am-4am".
+    columns:
+      - name: api_name
+        tests:
+          - not_null
+      - name: hour_of_day
+        tests:
+          - not_null
+      - name: avg_response_ms
+        tests:
+          - not_null

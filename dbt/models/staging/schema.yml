@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_pings
+    description: >
+      Cleaned and typed view over raw_pings. Adds derived boolean flags
+      (breached_sla, is_failure), a human-readable failure_reason, date/hour
+      parts for easy grouping, and sla_delta_ms to quantify how far each ping
+      was from its SLA threshold.
+    columns:
+      - name: ping_id
+        tests:
+          - unique
+          - not_null
+      - name: api_name
+        tests:
+          - not_null
+      - name: checked_at
+        tests:
+          - not_null
+      - name: response_ms
+        tests:
+          - not_null
+      - name: is_success
+        tests:
+          - not_null
+      - name: is_failure
+        tests:
+          - not_null
+      - name: breached_sla
+        tests:
+          - not_null

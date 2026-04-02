@@ -1,0 +1,76 @@
+name: Poll APIs and update report
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # every 30 minutes
+  workflow_dispatch:           # allows manual run from GitHub UI
+
+jobs:
+  poll-and-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create data directory
+        run: mkdir -p data
+
+      - name: Run poller
+        run: python ingestion/poller.py
+
+      - name: Set up dbt profiles
+        run: |
+          mkdir -p ~/.dbt
+          cat > ~/.dbt/profiles.yml << 'EOF'
+          api_monitor:
+            target: dev
+            outputs:
+              dev:
+                type: sqlite
+                threads: 1
+                database: "${{ github.workspace }}/data/monitor.db"
+                schema: main
+                schemas_and_paths:
+                  main: "${{ github.workspace }}/data/monitor.db"
+                schema_directory: "${{ github.workspace }}/data"
+          EOF
+
+      - name: Drop stg_pings view (dbt-sqlite workaround)
+        run: |
+          python - <<EOF
+          import sqlite3, os
+          db = os.path.join(os.environ['GITHUB_WORKSPACE'], 'data', 'monitor.db')
+          conn = sqlite3.connect(db)
+          conn.execute('DROP VIEW IF EXISTS stg_pings')
+          conn.commit()
+          conn.close()
+          print("Dropped stg_pings view")
+          EOF
+
+      - name: Run dbt
+        working-directory: dbt
+        run: |
+          dbt run
+          dbt test
+
+      - name: Generate report
+        run: python reports/generate_report.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/monitor.db report.md
+          git diff --staged --quiet || git commit -m "chore: update SLA report $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

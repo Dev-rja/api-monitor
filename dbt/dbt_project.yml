@@ -1,0 +1,17 @@
+name: api_monitor
+version: '1.0.0'
+config-version: 2
+
+profile: api_monitor
+
+model-paths: ["models"]
+test-paths: ["tests"]
+snapshot-paths: ["snapshots"]
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  api_monitor:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

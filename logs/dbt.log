@@ -1,0 +1,142 @@
+[0m10:56:11.095811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B077B0AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B088F7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B088F7B10>]}
+
+
+============================== 10:56:11.100755 | 705db6fc-f616-45aa-abcf-77cd5a1e443f ==============================
+[0m10:56:11.100755 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:56:11.101645 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select stg_pings', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m10:56:11.102512 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\rodz\api-monitor\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:56:11.103483 [debug] [MainThread]: Command `dbt run` failed at 10:56:11.103377 after 0.16 seconds
+[0m10:56:11.103771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B087EAFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B087D79B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B08737BD0>]}
+[0m10:56:11.104051 [debug] [MainThread]: Flushing usage events
+[0m10:56:12.718030 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:56:14.695144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246AC860AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246AD9A7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246AD9A7B10>]}
+
+
+============================== 10:56:14.698177 | e1f249e5-b104-4c8e-ae05-86a8c62ca7cd ==============================
+[0m10:56:14.698177 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:56:14.698828 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt test --select stg_pings', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m10:56:14.699238 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\rodz\api-monitor\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:56:14.700191 [debug] [MainThread]: Command `dbt test` failed at 10:56:14.700088 after 0.11 seconds
+[0m10:56:14.700462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246AD89AFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246AD8879B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246AD7E7BD0>]}
+[0m10:56:14.700765 [debug] [MainThread]: Flushing usage events
+[0m10:56:16.123170 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:57:37.352127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A910260AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9113A7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9113A7B10>]}
+
+
+============================== 10:57:37.355972 | b4ad2cf8-ca49-487b-93f0-edbdc998f6f9 ==============================
+[0m10:57:37.355972 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:57:37.356668 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'invocation_command': 'dbt run --select stg_pings', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\rodz\\api-monitor\\logs'}
+[0m10:57:37.375545 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "api_monitor", target "dev" invalid: 'schema_directory' is a required property
+[0m10:57:37.376988 [debug] [MainThread]: Command `dbt run` failed at 10:57:37.376868 after 0.15 seconds
+[0m10:57:37.377291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A912430180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9124017F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A912414490>]}
+[0m10:57:37.377609 [debug] [MainThread]: Flushing usage events
+[0m10:57:39.000537 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:58:04.226717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED55EC0AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED57007ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED57007B10>]}
+
+
+============================== 10:58:04.229815 | 95360331-7917-4bfd-9770-45f891f6cc19 ==============================
+[0m10:58:04.229815 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:58:04.230613 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select stg_pings', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\rodz\\api-monitor\\logs'}
+[0m10:58:04.244512 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "api_monitor", target "dev" invalid: 'schema_directory' is a required property
+[0m10:58:04.246994 [debug] [MainThread]: Command `dbt run` failed at 10:58:04.246861 after 0.14 seconds
+[0m10:58:04.247308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED58090180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED580617F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED58074490>]}
+[0m10:58:04.247609 [debug] [MainThread]: Flushing usage events
+[0m10:58:05.895956 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:58:17.188723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF2CB10AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF2DC57ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF2DC57B10>]}
+
+
+============================== 10:58:17.193312 | 61cc84c6-30d5-4486-9e72-371c4e66f9f8 ==============================
+[0m10:58:17.193312 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:58:17.194124 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'invocation_command': 'dbt run --select stg_pings', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\rodz\\api-monitor\\logs'}
+[0m10:58:17.208342 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "api_monitor", target "dev" invalid: 'schema_directory' is a required property
+[0m10:58:17.209480 [debug] [MainThread]: Command `dbt run` failed at 10:58:17.209369 after 0.13 seconds
+[0m10:58:17.209894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF2ECE0180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF2ECB17F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF2ECC4490>]}
+[0m10:58:17.210220 [debug] [MainThread]: Flushing usage events
+[0m10:58:18.790862 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:58:20.828435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F353A70AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F354BB7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F354BB7B10>]}
+
+
+============================== 10:58:20.833806 | 79166582-bfd1-46f1-931d-6daad53748ad ==============================
+[0m10:58:20.833806 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:58:20.835094 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'invocation_command': 'dbt test --select stg_pings', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\rodz\\api-monitor\\logs'}
+[0m10:58:20.854377 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "api_monitor", target "dev" invalid: 'schema_directory' is a required property
+[0m10:58:20.855981 [debug] [MainThread]: Command `dbt test` failed at 10:58:20.855866 after 0.17 seconds
+[0m10:58:20.856279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F355C40180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F355C117F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F355C24490>]}
+[0m10:58:20.856574 [debug] [MainThread]: Flushing usage events
+[0m10:58:22.377755 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:06:30.073871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8355F0AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B836737ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B836737B10>]}
+
+
+============================== 11:06:30.082086 | 36f7d966-5798-4b2b-912e-57cbab492f92 ==============================
+[0m11:06:30.082086 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:06:30.083392 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'invocation_command': 'dbt run --select stg_pings', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\rodz\\api-monitor\\logs'}
+[0m11:06:30.130054 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in C:\Users\rodz\api-monitor\dbt_project.yml
+[0m11:06:30.132301 [debug] [MainThread]: Command `dbt run` failed at 11:06:30.132112 after 0.25 seconds
+[0m11:06:30.132800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B837818180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B837789A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8377A46B0>]}
+[0m11:06:30.133314 [debug] [MainThread]: Flushing usage events
+[0m11:06:32.554047 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:06:35.867406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4D7910AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4D8A57ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4D8A57B10>]}
+
+
+============================== 11:06:35.872618 | ed169714-1d94-4f29-9108-45fca8bb72a8 ==============================
+[0m11:06:35.872618 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:06:35.873656 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt test --select stg_pings', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\rodz\\api-monitor\\logs'}
+[0m11:06:35.911498 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in C:\Users\rodz\api-monitor\dbt_project.yml
+[0m11:06:35.913798 [debug] [MainThread]: Command `dbt test` failed at 11:06:35.913441 after 0.24 seconds
+[0m11:06:35.914379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4D9B38180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4D9AA9A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4D9AC46B0>]}
+[0m11:06:35.914883 [debug] [MainThread]: Flushing usage events
+[0m11:06:38.683877 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:22:51.283808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016394290AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000163953D7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000163953D7B10>]}
+
+
+============================== 11:22:51.294725 | b37828a3-d00b-4fbe-965e-73019f9feaa5 ==============================
+[0m11:22:51.294725 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:22:51.296429 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'invocation_command': 'dbt run --select stg_pings', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:22:51.297335 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\rodz\api-monitor\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:22:51.299139 [debug] [MainThread]: Command `dbt run` failed at 11:22:51.298933 after 0.21 seconds
+[0m11:22:51.299713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000163952CAFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000163952B79B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016395217BD0>]}
+[0m11:22:51.300246 [debug] [MainThread]: Flushing usage events
+[0m11:22:54.231334 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:22:58.544939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262B8420AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262B9567ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262B9567B10>]}
+
+
+============================== 11:22:58.553429 | f905be44-17b0-405a-8c94-ffacfa02cd8c ==============================
+[0m11:22:58.553429 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:22:58.554704 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\rodz\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt test --select stg_pings', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:22:58.555457 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\rodz\api-monitor\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:22:58.557264 [debug] [MainThread]: Command `dbt test` failed at 11:22:58.557082 after 0.21 seconds
+[0m11:22:58.557740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262B945AFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262B94479B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262B93A7BD0>]}
+[0m11:22:58.558356 [debug] [MainThread]: Flushing usage events
+[0m11:23:00.525126 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -20,7 +20,6 @@ Every 30 minutes, a GitHub Actions workflow:
 4. **Runs 17 data quality tests** — ensures no nulls, no bad values, no duplicates
 5. **Generates a markdown SLA report** — commits `report.md` back to the repo automatically
 
----
 
 ## Architecture
 
@@ -45,7 +44,7 @@ poller.py  ──────────────────▶  raw_pings 
                                     report.md
 ```
 
----
+
 
 ## dbt layer
 
@@ -57,7 +56,6 @@ poller.py  ──────────────────▶  raw_pings 
 
 **17 data quality tests** cover: uniqueness, not-null constraints, boolean column integrity, and custom SQL assertions.
 
----
 
 ## Key skills demonstrated
 
@@ -68,7 +66,6 @@ poller.py  ──────────────────▶  raw_pings 
 - **SLA metric design** — uptime %, SLA compliance %, p95 response time approximation, health status classification
 - **Self-updating reporting** — markdown report generated and committed on every pipeline run
 
----
 
 ## Project structure
 
@@ -99,7 +96,6 @@ api-monitor/
 └── requirements.txt
 ```
 
----
 
 ## Run locally
 
@@ -124,7 +120,6 @@ python reports/generate_report.py
 # 5. open report.md to see results
 ```
 
----
 
 ## Sample output
 
@@ -135,7 +130,6 @@ python reports/generate_report.py
 | ⚠️ | `nasa_apod` | 100.0% | 72.0% | 2341.8 |
 | ❌ | `numbers_trivia` | 83.0% | 50.0% | 5821.4 |
 
----
 
 ## Tech stack
 
@@ -145,6 +139,5 @@ python reports/generate_report.py
 - **dbt-core + dbt-sqlite** — transformation, testing, and documentation
 - **GitHub Actions** — free cron scheduling, runs 24/7 with no server
 
----
 
 *Pipeline runs automatically — the SLA report above reflects real data.*

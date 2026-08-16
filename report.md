@@ -1,23 +1,23 @@
 # API Reliability Monitor — SLA Report
 
-> Last updated: **2026-08-16 17:55 UTC** &nbsp;|&nbsp; APIs monitored: **12** &nbsp;|&nbsp; Healthy: **6/12** &nbsp;|&nbsp; Avg uptime: **77.5%**
+> Last updated: **2026-08-16 18:33 UTC** &nbsp;|&nbsp; APIs monitored: **12** &nbsp;|&nbsp; Healthy: **6/12** &nbsp;|&nbsp; Avg uptime: **77.5%**
 
 ## SLA summary
 
 | Status | API | Uptime | SLA compliance | Avg (ms) | Max (ms) | SLA threshold | Breaches |
 |--------|-----|-------:|---------------:|---------:|---------:|--------------:|---------:|
-| ❌ | `numbers_trivia` | 0.0% | 66.15% | 3519.1 | 10420.1 | 1000ms | 683/2018 |
-| ❌ | `public_apis_list` | 0.0% | 99.55% | 136.3 | 5075.4 | 1500ms | 9/2018 |
-| ❌ | `ipapi_check` | 58.57% | 99.95% | 145.8 | 4507.0 | 2500ms | 1/2018 |
-| ❌ | `nasa_apod` | 78.0% | 54.11% | 2998.8 | 11152.5 | 2000ms | 926/2018 |
-| ⚠️ | `dog_ceo_random` | 96.23% | 97.13% | 509.7 | 10244.1 | 2500ms | 58/2018 |
-| ⚠️ | `open_meteo_weather` | 98.91% | 97.87% | 692.1 | 14877.1 | 2000ms | 43/2018 |
-| ✅ | `rest_countries` | 99.26% | 98.96% | 280.0 | 10221.5 | 2500ms | 21/2018 |
-| ✅ | `useless_fact` | 99.75% | 99.65% | 650.5 | 10229.6 | 2500ms | 7/2018 |
-| ✅ | `catfact_random` | 99.75% | 99.41% | 264.0 | 10080.2 | 3000ms | 12/2018 |
-| ✅ | `coingecko_bitcoin` | 99.8% | 99.95% | 95.9 | 4328.4 | 1500ms | 1/2018 |
-| ✅ | `agify_name` | 99.9% | 99.75% | 391.8 | 16112.2 | 2000ms | 5/2018 |
-| ✅ | `jsonplaceholder_posts` | 100.0% | 99.9% | 191.6 | 3882.8 | 2000ms | 2/2018 |
+| ❌ | `numbers_trivia` | 0.0% | 66.12% | 3522.3 | 10420.1 | 1000ms | 684/2019 |
+| ❌ | `public_apis_list` | 0.0% | 99.55% | 136.3 | 5075.4 | 1500ms | 9/2019 |
+| ❌ | `ipapi_check` | 58.54% | 99.95% | 145.8 | 4507.0 | 2500ms | 1/2019 |
+| ❌ | `nasa_apod` | 78.01% | 54.14% | 2997.5 | 11152.5 | 2000ms | 926/2019 |
+| ⚠️ | `dog_ceo_random` | 96.24% | 97.13% | 509.7 | 10244.1 | 2500ms | 58/2019 |
+| ⚠️ | `open_meteo_weather` | 98.91% | 97.87% | 692.2 | 14877.1 | 2000ms | 43/2019 |
+| ✅ | `rest_countries` | 99.26% | 98.96% | 280.0 | 10221.5 | 2500ms | 21/2019 |
+| ✅ | `useless_fact` | 99.75% | 99.65% | 650.5 | 10229.6 | 2500ms | 7/2019 |
+| ✅ | `catfact_random` | 99.75% | 99.41% | 264.0 | 10080.2 | 3000ms | 12/2019 |
+| ✅ | `coingecko_bitcoin` | 99.8% | 99.95% | 95.9 | 4328.4 | 1500ms | 1/2019 |
+| ✅ | `agify_name` | 99.9% | 99.75% | 391.7 | 16112.2 | 2000ms | 5/2019 |
+| ✅ | `jsonplaceholder_posts` | 100.0% | 99.9% | 191.6 | 3882.8 | 2000ms | 2/2019 |
 
 ## Consistently slow windows
 

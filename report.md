@@ -1,23 +1,23 @@
 # API Reliability Monitor — SLA Report
 
-> Last updated: **2026-08-22 10:01 UTC** &nbsp;|&nbsp; APIs monitored: **12** &nbsp;|&nbsp; Healthy: **6/12** &nbsp;|&nbsp; Avg uptime: **77.2%**
+> Last updated: **2026-08-22 10:35 UTC** &nbsp;|&nbsp; APIs monitored: **12** &nbsp;|&nbsp; Healthy: **6/12** &nbsp;|&nbsp; Avg uptime: **77.2%**
 
 ## SLA summary
 
 | Status | API | Uptime | SLA compliance | Avg (ms) | Max (ms) | SLA threshold | Breaches |
 |--------|-----|-------:|---------------:|---------:|---------:|--------------:|---------:|
-| ❌ | `numbers_trivia` | 0.0% | 67.5% | 3380.3 | 10420.1 | 1000ms | 728/2240 |
-| ❌ | `public_apis_list` | 0.0% | 99.51% | 137.4 | 5075.4 | 1500ms | 11/2240 |
-| ❌ | `ipapi_check` | 53.08% | 99.96% | 145.0 | 4507.0 | 2500ms | 1/2240 |
-| ❌ | `nasa_apod` | 79.51% | 56.79% | 2823.7 | 11152.5 | 2000ms | 968/2240 |
-| ⚠️ | `dog_ceo_random` | 96.61% | 97.41% | 490.7 | 10244.1 | 2500ms | 58/2240 |
-| ⚠️ | `open_meteo_weather` | 98.97% | 98.08% | 681.1 | 14877.1 | 2000ms | 43/2240 |
-| ✅ | `rest_countries` | 99.33% | 99.06% | 271.6 | 10221.5 | 2500ms | 21/2240 |
-| ✅ | `useless_fact` | 99.78% | 99.69% | 652.2 | 10229.6 | 2500ms | 7/2240 |
-| ✅ | `catfact_random` | 99.78% | 99.42% | 262.7 | 10080.2 | 3000ms | 13/2240 |
-| ✅ | `coingecko_bitcoin` | 99.82% | 99.91% | 96.4 | 4328.4 | 1500ms | 2/2240 |
-| ✅ | `agify_name` | 99.91% | 99.69% | 396.0 | 16112.2 | 2000ms | 7/2240 |
-| ✅ | `jsonplaceholder_posts` | 100.0% | 99.91% | 186.9 | 3882.8 | 2000ms | 2/2240 |
+| ❌ | `numbers_trivia` | 0.0% | 67.51% | 3378.9 | 10420.1 | 1000ms | 728/2241 |
+| ❌ | `public_apis_list` | 0.0% | 99.51% | 137.4 | 5075.4 | 1500ms | 11/2241 |
+| ❌ | `ipapi_check` | 53.06% | 99.96% | 145.0 | 4507.0 | 2500ms | 1/2241 |
+| ❌ | `nasa_apod` | 79.52% | 56.8% | 2822.7 | 11152.5 | 2000ms | 968/2241 |
+| ⚠️ | `dog_ceo_random` | 96.61% | 97.41% | 490.6 | 10244.1 | 2500ms | 58/2241 |
+| ⚠️ | `open_meteo_weather` | 98.97% | 98.08% | 681.0 | 14877.1 | 2000ms | 43/2241 |
+| ✅ | `rest_countries` | 99.33% | 99.06% | 271.6 | 10221.5 | 2500ms | 21/2241 |
+| ✅ | `useless_fact` | 99.78% | 99.69% | 652.2 | 10229.6 | 2500ms | 7/2241 |
+| ✅ | `catfact_random` | 99.78% | 99.42% | 262.7 | 10080.2 | 3000ms | 13/2241 |
+| ✅ | `coingecko_bitcoin` | 99.82% | 99.91% | 96.4 | 4328.4 | 1500ms | 2/2241 |
+| ✅ | `agify_name` | 99.91% | 99.69% | 396.0 | 16112.2 | 2000ms | 7/2241 |
+| ✅ | `jsonplaceholder_posts` | 100.0% | 99.91% | 186.9 | 3882.8 | 2000ms | 2/2241 |
 
 ## Consistently slow windows
 
@@ -27,7 +27,7 @@ These APIs exceeded their SLA threshold on average during these hours:
 |-----|-----------|----------:|----------------:|
 | `numbers_trivia` | 03:00 | 5024.8 | 50.0% |
 | `numbers_trivia` | 02:00 | 4199.6 | 40.0% |
-| `numbers_trivia` | 10:00 | 4133.2 | 39.53% |
+| `numbers_trivia` | 10:00 | 4087.3 | 39.08% |
 | `numbers_trivia` | 14:00 | 3852.3 | 37.37% |
 | `numbers_trivia` | 00:00 | 3701.8 | 35.48% |
 | `numbers_trivia` | 09:00 | 3667.1 | 35.42% |

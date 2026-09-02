@@ -1,23 +1,23 @@
 # API Reliability Monitor — SLA Report
 
-> Last updated: **2026-09-02 13:50 UTC** &nbsp;|&nbsp; APIs monitored: **12** &nbsp;|&nbsp; Healthy: **7/12** &nbsp;|&nbsp; Avg uptime: **77.0%**
+> Last updated: **2026-09-02 17:30 UTC** &nbsp;|&nbsp; APIs monitored: **12** &nbsp;|&nbsp; Healthy: **7/12** &nbsp;|&nbsp; Avg uptime: **77.0%**
 
 ## SLA summary
 
 | Status | API | Uptime | SLA compliance | Avg (ms) | Max (ms) | SLA threshold | Breaches |
 |--------|-----|-------:|---------------:|---------:|---------:|--------------:|---------:|
-| ❌ | `numbers_trivia` | 0.0% | 70.13% | 3119.8 | 10420.1 | 1000ms | 728/2437 |
-| ❌ | `public_apis_list` | 0.0% | 99.43% | 141.3 | 5075.4 | 1500ms | 14/2437 |
-| ❌ | `ipapi_check` | 49.32% | 99.96% | 144.7 | 4507.0 | 2500ms | 1/2437 |
-| ❌ | `nasa_apod` | 80.63% | 58.64% | 2706.2 | 11152.5 | 2000ms | 1008/2437 |
-| ⚠️ | `dog_ceo_random` | 96.88% | 97.58% | 483.0 | 10244.1 | 2500ms | 59/2437 |
-| ✅ | `open_meteo_weather` | 99.02% | 98.24% | 673.3 | 14877.1 | 2000ms | 43/2437 |
-| ✅ | `rest_countries` | 99.38% | 99.1% | 268.6 | 10221.5 | 2500ms | 22/2437 |
-| ✅ | `useless_fact` | 99.79% | 99.71% | 657.4 | 10229.6 | 2500ms | 7/2437 |
-| ✅ | `catfact_random` | 99.79% | 99.47% | 261.7 | 10080.2 | 3000ms | 13/2437 |
-| ✅ | `coingecko_bitcoin` | 99.84% | 99.92% | 96.4 | 4328.4 | 1500ms | 2/2437 |
-| ✅ | `agify_name` | 99.92% | 99.51% | 403.4 | 16112.2 | 2000ms | 12/2437 |
-| ✅ | `jsonplaceholder_posts` | 100.0% | 99.92% | 184.5 | 3882.8 | 2000ms | 2/2437 |
+| ❌ | `numbers_trivia` | 0.0% | 70.14% | 3118.6 | 10420.1 | 1000ms | 728/2438 |
+| ❌ | `public_apis_list` | 0.0% | 99.43% | 141.3 | 5075.4 | 1500ms | 14/2438 |
+| ❌ | `ipapi_check` | 49.3% | 99.96% | 144.7 | 4507.0 | 2500ms | 1/2438 |
+| ❌ | `nasa_apod` | 80.6% | 58.61% | 2709.3 | 11152.5 | 2000ms | 1009/2438 |
+| ⚠️ | `dog_ceo_random` | 96.88% | 97.58% | 483.0 | 10244.1 | 2500ms | 59/2438 |
+| ✅ | `open_meteo_weather` | 99.02% | 98.24% | 673.2 | 14877.1 | 2000ms | 43/2438 |
+| ✅ | `rest_countries` | 99.38% | 99.1% | 268.7 | 10221.5 | 2500ms | 22/2438 |
+| ✅ | `useless_fact` | 99.79% | 99.71% | 657.7 | 10229.6 | 2500ms | 7/2438 |
+| ✅ | `catfact_random` | 99.79% | 99.47% | 261.8 | 10080.2 | 3000ms | 13/2438 |
+| ✅ | `coingecko_bitcoin` | 99.84% | 99.92% | 96.5 | 4328.4 | 1500ms | 2/2438 |
+| ✅ | `agify_name` | 99.92% | 99.51% | 403.4 | 16112.2 | 2000ms | 12/2438 |
+| ✅ | `jsonplaceholder_posts` | 100.0% | 99.92% | 184.5 | 3882.8 | 2000ms | 2/2438 |
 
 ## Consistently slow windows
 
@@ -31,10 +31,10 @@ These APIs exceeded their SLA threshold on average during these hours:
 | `numbers_trivia` | 02:00 | 3519.9 | 33.33% |
 | `numbers_trivia` | 14:00 | 3451.0 | 33.33% |
 | `numbers_trivia` | 09:00 | 3364.9 | 32.38% |
-| `numbers_trivia` | 17:00 | 3349.8 | 33.33% |
+| `numbers_trivia` | 17:00 | 3325.2 | 33.07% |
 | `nasa_apod` | 03:00 | 3307.4 | 48.08% |
+| `nasa_apod` | 17:00 | 3267.7 | 41.27% |
 | `nasa_apod` | 05:00 | 3266.3 | 47.14% |
-| `nasa_apod` | 09:00 | 3237.7 | 45.19% |
 
 ---
 _Generated automatically by [api-monitor](https://github.com/Dev-rja/api-monitor) via GitHub Actions + dbt._
